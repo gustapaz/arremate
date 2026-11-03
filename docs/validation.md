@@ -14,7 +14,18 @@
 
 Typecheck, build e `npm audit` aprovados, sem vulnerabilidades informadas em 02/11/2026. Export apenas HTML, favicon, JS/CSS e licença, sem source maps, testes, `.git`, ambientes ou configuração local. Sem backend, APIs, dados pessoais, contas, fontes/imagens externas, telemetria ou compras.
 
-GitHub Pages de repositório público disponível no GitHub Free, conforme https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages. Sem cartão, faturamento ou trial. Partidas públicas, autoria e scanner serão registrados antes da entrega.
+GitHub Pages de repositório público disponível no GitHub Free, conforme https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages. Sem cartão, faturamento ou trial.
+
+## Publicação verificada em 02/11/2026
+
+- Implementação `bcc499650cb4ef7439629592efc38ddbbf4005f1`; correção de foco `dee8628a315d80e7437b3cf15ac5c92278b50a51`. CI `41551919742` e `41552349145` concluídos com testes, auditoria, typecheck, build e deploy aprovados.
+- No runtime público corrigido: Leve concluído com vitória 16–0, Atento com derrota 7–9, dupla com empate 8–8. Cada partida pequena percorreu as 30 linhas. Percursos derivados do modelo e executados por teclado, clique SVG e controles por número, sem editar save ou injetar estado. Primeiro par de jogadas normal; restante em Menos movimento. Evidências `public-leve-win.png`, `public-atento-loss.png`, `public-draw.png` e `public-gameplay.png`.
+- Foco real publicado conferido após recarregar o HTML para evitar cache da versão anterior: `tabindex="0"`, Enter costurou e P pausou com uma linha e timer rival pendente. Escape retomou e devolveu foco ao campo. Manual reabrível, som/mute e histórico por modo após reload conferidos; tentativa reiniciou e preferência de movimento persistiu.
+- Empate público revisado em viewport 390 × 844, sem overflow (375 px úteis/scrollWidth 375 px). Captura móvel por screenshot de viewport; captura de página inteira com override apresentou recomposição incorreta na ferramenta e foi substituída. Isso não foi tratado como prova de layout do jogo. Override restaurado e aba própria fechada.
+- Cinco arquivos públicos idênticos byte a byte ao build corrigido: HTML, favicon, licença, JS e CSS; 40.264 bytes totais. Bundle principal ~11,8 kB gzip. Sem promessa de FPS universal.
+- Gitleaks 8.30.1 com configuração externa confiável sem achados no staged, histórico, export e clone remoto novo. Sem supressões locais. Secret scanning, push protection e alertas/atualizações de dependências gratuitos habilitados.
+- API do GitHub confirmou somente `gustapaz` como contribuidor. Autor e committer `Gustavo Paz <96732649+gustapaz@users.noreply.github.com>`, sem coautor adicional; licença de terceiros preservada.
+- Mensagens de extensão do navegador separadas dos erros do jogo. Nenhuma falha do código de gameplay ou violação CSP identificada nas partidas públicas corrigidas; não alegar console universalmente limpo.
 
 ## Limites
 

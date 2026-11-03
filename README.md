@@ -4,6 +4,8 @@
 
 [Jogar gratuitamente](https://gustapaz.github.io/arremate/)
 
+![Arremate publicado, campo triangular em disputa](docs/public-gameplay.png)
+
 Estratégia territorial em campo triangular. Costure fronteiras, feche retalhos e prepare sequências de captura. Três campos de 16, 25 ou 36 áreas, dois adversários locais e modo para duas pessoas no mesmo dispositivo.
 
 ## Regras
