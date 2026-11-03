@@ -1,0 +1,1 @@
+{"name":"arremate","version":"1.0.0","private":true,"type":"module","scripts":{"dev":"vite --host 127.0.0.1 --port 4213","preview":"vite preview --host 127.0.0.1 --port 4214","test":"node --test tests/*.test.ts","build":"tsc --noEmit && node scripts/licenses.mjs && vite build"},"dependencies":{"preact":"11.1.1"},"devDependencies":{"typescript":"7.0.2","vite":"8.3.5"}}
