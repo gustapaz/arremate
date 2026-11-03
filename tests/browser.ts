@@ -13,6 +13,7 @@ async function match(mode:Mode,size:number){await click('#restart');await select
  await waitFor(()=>count()===g.moves);
  }check(`${mode} ${size}: complete UI match matches model`,Number(text('#score-0'))===g.scores[0]&&Number(text('#score-1'))===g.scores[1]&&count()===g.edges.length);return g;}
 try{await tick(30);check('corrupt save starts a clean field',count()===0&&text('#score-0')==='0');
+const svg=doc.querySelector<SVGSVGElement>('#board')!;svg.focus();check('SVG board receives actual browser focus',doc.activeElement===svg);
 doc.querySelector('#board')!.dispatchEvent(new KeyboardEvent('keydown',{key:'Enter',bubbles:true,cancelable:true}));await tick();check('keyboard places line and pending CPU blocks player',count()===1&&doc.querySelector<HTMLButtonElement>('#stitch')!.disabled);
 await click('#pause');await tick();const pausedCount=count();await tick(500);check('pause freezes pending native CPU timer',count()===pausedCount&&doc.querySelector('dialog')!.open);
 doc.querySelector('dialog')!.dispatchEvent(new Event('cancel',{cancelable:true}));await tick(460);check('resume schedules exactly one CPU move',count()===2);
